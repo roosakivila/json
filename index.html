@@ -46,11 +46,19 @@
             teksti = teksti + "<p>" + data.kuvaus + "</p>";
             teksti = teksti + "<p><img src='" + data.kuva + "' alt='kuva' ></p>";
             teksti = teksti + "<h3>Opintojakso: " + data.opintojakso.nimi + " " + data.opintojakso.tunnus + " " + data.opintojakso.opintopisteet + " op" + "</h3>";
+            // taulukko
             teksti = teksti + "<ul>"
             for (var i = 0; i < data.sisalto.length; i++) {
                 teksti = teksti + "<li>" + data.sisalto[i] + "</li>";
             }
             teksti = teksti + "</ul>"
+            // objektitaulukko
+            teksti = teksti + "<ul>"
+            for (var i = 0; i < data.tekniikat.length; i++) {
+                teksti = teksti + "<p>" + data.tekniikat[i].aihe + "</p>";
+            }
+            teksti = teksti + "</ul>"
+
 
             // tulostus sivulle
             document.getElementById("vastaus").innerHTML = teksti;

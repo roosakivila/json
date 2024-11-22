@@ -38,15 +38,16 @@
                 document.getElementById("vastaus").innerHTML =
                     "<p>Tietoa ei pystytä hakemaan</p>";
 
-                function kerro(data) {
-                    //muuttuja teksti, johon tulostettava tieto kerätään
-                    let teksti = "";
-                    teksti = "<h1>" + data.otsikko + "</h1>";
+            })
+        function kerro(data) {
+            //muuttuja teksti, johon tulostettava tieto kerätään
+            let teksti = "";
+            teksti = "<h1>" + data.otsikko + "</h1>";
 
-                    // tulostus sivulle
-                    document.getElementById("vastaus").innerHTML = teksti;
-                }
-            })</script>
+            // tulostus sivulle
+            document.getElementById("vastaus").innerHTML = teksti;
+        }
+    </script>
 
     <!--navipalkinscript-->
     <script>

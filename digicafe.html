@@ -31,12 +31,12 @@
             .then(function (responseJson) {
                 // Testataan onnistuuko json-luku 
                 // jos onnistuu päivitetään tähän json-datan käsittelevän funktion kutsu 
-                document.getElementById("vastaus").innerHTML =
+                document.getElementById("tulos").innerHTML =
                     "<p>Jatketaan harjoitusta</p>";
             })
             // Jos tuli jokin virhe 
             .catch(function (error) {
-                document.getElementById("vastaus").innerHTML =
+                document.getElementById("tulos").innerHTML =
                     "<p>Tietoa ei pystytä hakemaan</p>";
             })
     </script>

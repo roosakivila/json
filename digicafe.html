@@ -29,16 +29,20 @@
             })
             // Käsitellään muunnettu (eli JSON muotoinen) vastaus 
             .then(function (responseJson) {
-                // Testataan onnistuuko json-luku 
-                // jos onnistuu päivitetään tähän json-datan käsittelevän funktion kutsu 
-                document.getElementById("tulos").innerHTML =
-                    "<p>Jatketaan harjoitusta</p>";
+                kerro(responseJson);
             })
             // Jos tuli jokin virhe 
             .catch(function (error) {
                 document.getElementById("tulos").innerHTML =
                     "<p>Tietoa ei pystytä hakemaan</p>";
             })
+        function kerro(data) {
+            let teksti = "";
+            teksti = "<h1>" + data.yritys + "</h1>"
+        }
+
+        // tulostus sivulle
+        document.getElementById("tulos").innerHTML = teksti;
     </script>
 </body>
 

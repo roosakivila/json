@@ -30,15 +30,23 @@
             })
             // Käsitellään muunnettu (eli JSON muotoinen) vastaus 
             .then(function (responseJson) {
-                //kerro(responseJson);
-                document.getElementById("tyopaikat").innerHTML =
-                    "<p>Toimii</p>";
+                kerro(responseJson);
             })
             // Jos tuli jokin virhe 
             .catch(function (error) {
                 document.getElementById("tyopaikat").innerHTML =
                     "<p>Tietoa ei pystytä hakemaan</p>";
             })
+
+        function kerro(data) {
+            let teksti = "";
+            teksti = "<h1>Työpaikat</h1>";
+            teksti = teksti + "<ul>"
+            for (var i = 0; i < data.tyotehtava.length; i++) {
+                teksti = teksti + "<li>" + data.tyotehtava[i] + "</li>";
+            }
+            teksti = teksti + "</ul>";
+        }
 
     </script>
 

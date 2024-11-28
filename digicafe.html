@@ -38,10 +38,12 @@
             })
         function kerro(data) {
             let teksti = "";
-            teksti = "<h1>" + data.yritys + "</h1>"
+            teksti = "<h1>" + data.yritys + "</h1>";
+            teksti = teksti + "<p>" + data.yhteystiedot + "</p>";
 
             // tulostus sivulle
             document.getElementById("tulos").innerHTML = teksti;
+
         }
 
     </script>

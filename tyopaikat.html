@@ -19,6 +19,29 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
+
+    <div id="tyopaikat"></div>
+
+    <script>
+        fetch('http://gis.vantaa.fi/rest/tyopaikat/v1/Tekninen ala')
+            // Muunnetaan vastaus JSON muotoon 
+            .then(function (response) {
+                return response.json();
+            })
+            // Käsitellään muunnettu (eli JSON muotoinen) vastaus 
+            .then(function (responseJson) {
+                //kerro(responseJson);
+                document.getElementById("tyopaikat").innerHTML =
+                    "<p>Toimii</p>";
+            })
+            // Jos tuli jokin virhe 
+            .catch(function (error) {
+                document.getElementById("tyopaikat").innerHTML =
+                    "<p>Tietoa ei pystytä hakemaan</p>";
+            })
+
+    </script>
+
 </body>
 
 </html>

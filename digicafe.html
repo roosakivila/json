@@ -39,7 +39,7 @@
         function kerro(data) {
             let teksti = "";
             teksti = "<h1>" + data.yritys + "</h1>";
-            teksti = teksti + "<p>" + data.osoite + + data.puhelin + data.email + "</p>";
+            teksti = teksti + "<p>" + data.yhteystiedot.osoite + + data.yhteystiedot.puhelin + data.yhteystiedot.email + "</p>";
             teksti = teksti + "<ul>"
             for (var i = 0; i < data.tuotteet.length; i++) {
                 teksti = teksti + "<li>" + data.tuotteet[i] + "</li>";

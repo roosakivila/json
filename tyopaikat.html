@@ -42,8 +42,8 @@
             let teksti = "";
             teksti = "<h1>Työpaikat</h1>";
             teksti = teksti + "<ul>"
-            for (var i = 0; i < data.tyotehtava.length; i++) {
-                teksti = teksti + "<li>" + data.tyotehtava[i] + "</li>";
+            for (var i = 0; i < data.length; i++) {
+                teksti = teksti + "<li>" + data[i].tyotehtava + "</li>";
             }
             teksti = teksti + "</ul>";
 

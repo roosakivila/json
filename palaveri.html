@@ -20,6 +20,31 @@
         </a>
     </div>
 
+    <div id="palaveri"></div>
+    <script>
+        fetch('oma.json')
+            // Muunnetaan vastaus JSON muotoon 
+            .then(function (response) {
+                return response.json();
+            })
+            // Käsitellään muunnettu (eli JSON muotoinen) vastaus 
+            .then(function (responseJson) {
+                kerro(responseJson);
+            })
+            // Jos tuli jokin virhe 
+            .catch(function (error) {
+                document.getElementById("tulos").innerHTML =
+                    "<p>Tietoa ei pystytä hakemaan</p>";
+            })
+        function kerro(data) {
+            let teksti = "";
+            teksti = "<h1>Palaveri: " + data.aihe + "</h1>";
+
+            document.getElementById("palaveri").innerHTML = teksti;
+        }
+
+    </script>
+
 </body>
 
 </html>

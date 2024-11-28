@@ -40,6 +40,12 @@
             let teksti = "";
             teksti = "<h1>Palaveri: " + data.aihe + "</h1>";
             teksti = teksti + "<p> Osallistujamäärä: " + data.osallistujamaara + "</p>";
+            teksti = teksti + "<h2>Osallistujat:</h2>";
+            teksti = teksti + "<ul>"
+            for (var i = 0; i < data.osallistujat.length; i++) {
+                teksti = teksti + "<li>" + data.osallistujat[i] + "</li>";
+            }
+            teksti = teksti + "</ul>";
 
             document.getElementById("palaveri").innerHTML = teksti;
         }

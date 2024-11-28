@@ -39,10 +39,11 @@
         function kerro(data) {
             let teksti = "";
             teksti = "<h1>" + data.yritys + "</h1>"
+
+            // tulostus sivulle
+            document.getElementById("tulos").innerHTML = teksti;
         }
 
-        // tulostus sivulle
-        document.getElementById("tulos").innerHTML = teksti;
     </script>
 </body>
 

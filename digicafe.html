@@ -39,7 +39,7 @@
         function kerro(data) {
             let teksti = "";
             teksti = "<h1>" + data.yritys + "</h1>";
-            teksti = teksti + "<p>" + data.yhteystiedot + "</p>";
+            teksti = teksti + "<p>" + data.osoite + + data.puhelin + "</p>";
 
             // tulostus sivulle
             document.getElementById("tulos").innerHTML = teksti;

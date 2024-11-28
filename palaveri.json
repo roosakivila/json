@@ -1,7 +1,9 @@
-{"aihe":"Kuukausipalaveri"}, 
-    {"osallistujamaara":"10"}, 
-"osallistujat":["Roosa Kivilä", "Nelli Anttila", "Anni Kukkonen"], 
-{"paikka":"Clarion Hotel Jätkäsaari"},
-{"aloitus":"1.12.2024 klo 10"},
-{"kesto":"2 tuntia"} 
- 
+{
+  "aihe": "Kuukausipalaveri",
+  "osallistujamaara": 10,
+  "osallistujat": ["Roosa Kivilä", "Nelli Anttila", "Anni Kukkonen"],
+  "paikka": "Clarion Hotel Jätkäsaari",
+  "aloitus": "1.12.2024 klo 10",
+  "kesto": "2 tuntia"
+}
+

@@ -39,6 +39,7 @@
         function kerro(data) {
             let teksti = "";
             teksti = "<h1>Palaveri: " + data.aihe + "</h1>";
+            teksti = teksti + "<p> Osallistujamäärä: " + data.osallistujamaara + "</p>";
 
             document.getElementById("palaveri").innerHTML = teksti;
         }
